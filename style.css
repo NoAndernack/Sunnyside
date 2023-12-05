@@ -1,3 +1,4 @@
+@import url(asset/mixin.scss);
 * {
   margin: 0;
 }
@@ -35,7 +36,7 @@ header .topnav a {
   text-decoration: none;
 }
 header .topnav .active {
-  border-radius: 2em;
+  border-radius: 28px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   font-family: "Fraunces", serif;
@@ -79,6 +80,10 @@ header .header__element2 {
   font-family: "Fraunces", serif;
   font-weight: 900;
 }
+.design__mirrorbox1__texte h2 {
+  width: 445px;
+  height: 98px;
+}
 .design__mirrorbox1__img {
   width: 720px;
   height: 600px;
@@ -93,6 +98,16 @@ header .header__element2 {
   margin-bottom: 157px;
   margin-left: 110px;
   margin-right: 165px;
+}
+.design__mirrorbox1-2__texte h2 {
+  width: 445px;
+  height: 98px;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 49px;
+  letter-spacing: -0.2857142985px;
+  text-align: left;
 }
 .design__mirrorbox1-2__img {
   width: 720px;

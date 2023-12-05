@@ -8,6 +8,7 @@ $Verydarkgrayishblue: hsl(213, 9%, 39%);
 $Darkgrayishblue: hsl(232, 10%, 55%);
 $Grayishblue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
+@import url(asset/mixin.scss);
 
 * {
     margin: 0;
@@ -59,7 +60,7 @@ header {
 
 
         & .active {
-            border-radius: 2em;
+            border-radius: 28px;
             background-color: #ffffff;
             color: rgb(0, 0, 0);
             font-family: 'Fraunces', serif;
@@ -101,30 +102,31 @@ header {
 .design {
     display: flex;
     flex-direction: column;
-
     &__mirrorbox1 {
         display: flex;
 
         &__texte {
             width: 445px;
-            height:285px;
-            margin-top:158px ;
+            height: 285px;
+            margin-top: 158px;
             margin-bottom: 157px;
-            margin-left:165px ;
-            margin-right:110px ;
-            // padding-top: 9.8755em;
-            // padding-left: 10.313em;
-            // padding-right:6.875em;
-            // padding-bottom: 9.813em;
+            margin-left: 165px;
+            margin-right: 110px;
             font-family: 'Fraunces', serif;
-            ;
             font-weight: 900;
+
+            & h2 {
+                @include monH2;
+                
+            }
+
+
 
         }
 
         &__img {
-            width:720px;
-            height:600px;
+            width: 720px;
+            height: 600px;
         }
     }
 
@@ -133,11 +135,16 @@ header {
 
         &__texte {
             width: 445px;
-            height:286px;
+            height: 286px;
             margin-top: 157px;
-            margin-bottom:157px ;
-            margin-left:110px;
-            margin-right:165px ;
+            margin-bottom: 157px;
+            margin-left: 110px;
+            margin-right: 165px;
+
+            & h2 {
+                @include monH2;
+
+            }
         }
 
         &__img {
@@ -147,13 +154,15 @@ header {
     }
 
     &__mirrorbox3 {
-        display:flex;
-        &--photogauche{
+        display: flex;
+
+        &--photogauche {
             width: 720px;
             height: 600px;
-            background-image:url(img/photos/image-graphic-design.jpg)
+            background-image: url(img/photos/image-graphic-design.jpg)
         }
-        &--photodroite{
+
+        &--photodroite {
             width: 720px;
             height: 600px;
             background-image: url(img/photos/image-photography.jpg);
