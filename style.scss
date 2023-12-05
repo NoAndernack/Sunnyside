@@ -8,7 +8,45 @@ $Verydarkgrayishblue: hsl(213, 9%, 39%);
 $Darkgrayishblue: hsl(232, 10%, 55%);
 $Grayishblue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
-@import url(asset/mixin.scss);
+
+@mixin monH2 {
+    width: 445px;
+    height: 98px;
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 49px;
+    letter-spacing: -0.2857142984867096px;
+    text-align: left;
+}
+
+@mixin monP {
+    weight: 445px;
+    height: 90px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.12857143580913544px;
+    text-align: left;
+    margin-top:32px;
+    margin-bottom:40px;
+}
+
+@mixin monH3 {
+    width: 137px;
+    height: 125px;
+    color: #24303E;
+
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    /* 166.667% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 * {
     margin: 0;
@@ -102,6 +140,7 @@ header {
 .design {
     display: flex;
     flex-direction: column;
+
     &__mirrorbox1 {
         display: flex;
 
@@ -117,7 +156,15 @@ header {
 
             & h2 {
                 @include monH2;
-                
+
+            }
+
+            & p {
+                @include monP;
+
+            }
+            & h3 {
+                @include monH3;
             }
 
 
@@ -142,9 +189,24 @@ header {
             margin-right: 165px;
 
             & h2 {
-                @include monH2;
+                width: 445px;
+                height: 98px;
+                font-family: 'Fraunces', serif;
+                font-size: 40px;
+                font-weight: 900;
+                line-height: 49px;
+                letter-spacing: -0.2857142984867096px;
+                text-align: left;
+            }
+            & p {
+                @include monP;
 
             }
+            & h3 {
+                @include monH3;
+            }
+
+
         }
 
         &__img {

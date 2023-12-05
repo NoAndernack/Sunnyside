@@ -1,4 +1,3 @@
-@import url(asset/mixin.scss);
 * {
   margin: 0;
 }
@@ -83,6 +82,37 @@ header .header__element2 {
 .design__mirrorbox1__texte h2 {
   width: 445px;
   height: 98px;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 49px;
+  letter-spacing: -0.2857142985px;
+  text-align: left;
+}
+.design__mirrorbox1__texte p {
+  weight: 445px;
+  height: 90px;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.1285714358px;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.design__mirrorbox1__texte h3 {
+  width: 137px;
+  height: 125px;
+  color: #24303E;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  /* 166.667% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .design__mirrorbox1__img {
   width: 720px;
@@ -108,6 +138,31 @@ header .header__element2 {
   line-height: 49px;
   letter-spacing: -0.2857142985px;
   text-align: left;
+}
+.design__mirrorbox1-2__texte p {
+  weight: 445px;
+  height: 90px;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.1285714358px;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.design__mirrorbox1-2__texte h3 {
+  width: 137px;
+  height: 125px;
+  color: #24303E;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  /* 166.667% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .design__mirrorbox1-2__img {
   width: 720px;
