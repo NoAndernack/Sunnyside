@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+body p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  font-size: 18px;
+}
+
+header {
+  background-image: url(img/photos/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1440px;
+  height: 800px;
+}
+header .topnav {
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 0, 7em;
+  overflow: hidden;
+}
+header .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 2em;
+  margin-top: 3em;
+  margin-right: 3em;
+  text-decoration: none;
+}
+header .topnav .active {
+  border-radius: 2em;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+}
+header .topnav .topnav__right {
+  float: right;
+}
+header .topnav .topnav__left {
+  margin-top: 3em;
+  margin-left: 3em;
+  padding: 1em 2em;
+}
+header .header__element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: white;
+}
+header .header__element2 {
+  display: flex;
+  align-items: center;
+}
+
+.design {
+  display: flex;
+  flex-direction: column;
+}
+.design__mirrorbox1 {
+  display: flex;
+}
+.design__mirrorbox1__texte {
+  width: 445px;
+  height: 285px;
+  margin-top: 158px;
+  margin-bottom: 157px;
+  margin-left: 165px;
+  margin-right: 110px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.design__mirrorbox1__img {
+  width: 720px;
+  height: 600px;
+}
+.design__mirrorbox1-2 {
+  display: flex;
+}
+.design__mirrorbox1-2__texte {
+  width: 445px;
+  height: 286px;
+  margin-top: 157px;
+  margin-bottom: 157px;
+  margin-left: 110px;
+  margin-right: 165px;
+}
+.design__mirrorbox1-2__img {
+  width: 720px;
+  height: 600px;
+}
+.design__mirrorbox3 {
+  display: flex;
+}
+.design__mirrorbox3--photogauche {
+  width: 720px;
+  height: 600px;
+  background-image: url(img/photos/image-graphic-design.jpg);
+}
+.design__mirrorbox3--photodroite {
+  width: 720px;
+  height: 600px;
+  background-image: url(img/photos/image-photography.jpg);
+}/*# sourceMappingURL=style.css.map */
