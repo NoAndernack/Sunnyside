@@ -10,7 +10,7 @@ $Grayishblue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
 
 @mixin monH2 {
-    width: 445px;
+    width: 720px;
     height: 98px;
     font-family: 'Fraunces', serif;
     font-size: 40px;
@@ -21,7 +21,7 @@ $White: hsl(0, 0%, 100%);
 }
 
 @mixin monP {
-    weight: 445px;
+    width: 445px;
     height: 90px;
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
@@ -29,8 +29,8 @@ $White: hsl(0, 0%, 100%);
     line-height: 30px;
     letter-spacing: -0.12857143580913544px;
     text-align: left;
-    margin-top:32px;
-    margin-bottom:40px;
+    margin-top: 32px;
+    margin-bottom: 40px;
 }
 
 @mixin monH3 {
@@ -46,6 +46,36 @@ $White: hsl(0, 0%, 100%);
     /* 166.667% */
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+@mixin monTextePhoto {
+    width: 339px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    width: 339px;
+    margin-top: 400px;
+    text-align: center;
+    margin-left: 175px;
+
+    & h2 {
+        padding-bottom: 50px;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.2px;
+    }
+
+}
+
+@mixin photoDesign {
+    width: 720px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
 }
 
 * {
@@ -163,6 +193,7 @@ header {
                 @include monP;
 
             }
+
             & h3 {
                 @include monH3;
             }
@@ -198,10 +229,12 @@ header {
                 letter-spacing: -0.2857142984867096px;
                 text-align: left;
             }
+
             & p {
                 @include monP;
 
             }
+
             & h3 {
                 @include monH3;
             }
@@ -216,18 +249,80 @@ header {
     }
 
     &__mirrorbox3 {
+        width: 1440px;
         display: flex;
-
-        &--photogauche {
+       
+        &__photogauche {
             width: 720px;
             height: 600px;
-            background-image: url(img/photos/image-graphic-design.jpg)
+            background-image: url(img/photos/image-graphic-design.jpg);
+            @include photoDesign;
+
+            &__texte {
+                color: $Darkdesaturatedcyan;
+                @include monTextePhoto;
+            }
         }
 
-        &--photodroite {
+        &__photodroite {
             width: 720px;
             height: 600px;
             background-image: url(img/photos/image-photography.jpg);
+            @include photoDesign;
+
+            &__texte {
+                color: $Darkblue;
+                @include monTextePhoto;
+            }
+        }
+    }
+
+    &__testimonial {
+        width: 1440px;
+        height: 450px;
+        flex-shrink: 0;
+        &__titre {
+            text-align: center;
+            padding-top:100px;
+        }
+        
+        &__colonne {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+            padding-top: 160px;
+        padding-left:165px ;
+        padding-right: 165px;
+        &__un {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            & .photo-emily {
+                border-radius: 50% 50% 50% 50%;
+                width:20%;
+            }
+        }
+        &__deux{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            & .photo-thomas {
+                border-radius: 50% 50% 50% 50%;
+                width:20%;
+            }
+        }
+        &__trois{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            & .photo-jennie {
+                border-radius: 50% 50% 50% 50%;
+                width:20%;
+            }
+        }
         }
     }
 }

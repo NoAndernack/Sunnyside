@@ -80,7 +80,7 @@ header .header__element2 {
   font-weight: 900;
 }
 .design__mirrorbox1__texte h2 {
-  width: 445px;
+  width: 720px;
   height: 98px;
   font-family: "Fraunces", serif;
   font-size: 40px;
@@ -90,7 +90,7 @@ header .header__element2 {
   text-align: left;
 }
 .design__mirrorbox1__texte p {
-  weight: 445px;
+  width: 445px;
   height: 90px;
   font-family: "Barlow", sans-serif;
   font-size: 18px;
@@ -140,7 +140,7 @@ header .header__element2 {
   text-align: left;
 }
 .design__mirrorbox1-2__texte p {
-  weight: 445px;
+  width: 445px;
   height: 90px;
   font-family: "Barlow", sans-serif;
   font-size: 18px;
@@ -169,15 +169,109 @@ header .header__element2 {
   height: 600px;
 }
 .design__mirrorbox3 {
+  width: 1440px;
   display: flex;
 }
-.design__mirrorbox3--photogauche {
+.design__mirrorbox3__photogauche {
   width: 720px;
   height: 600px;
   background-image: url(img/photos/image-graphic-design.jpg);
+  width: 720px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.design__mirrorbox3--photodroite {
+.design__mirrorbox3__photogauche__texte {
+  color: hsl(167, 40%, 24%);
+  width: 339px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  width: 339px;
+  margin-top: 400px;
+  text-align: center;
+  margin-left: 175px;
+}
+.design__mirrorbox3__photogauche__texte h2 {
+  padding-bottom: 50px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+.design__mirrorbox3__photodroite {
   width: 720px;
   height: 600px;
   background-image: url(img/photos/image-photography.jpg);
+  width: 720px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.design__mirrorbox3__photodroite__texte {
+  color: hsl(198, 62%, 26%);
+  width: 339px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  width: 339px;
+  margin-top: 400px;
+  text-align: center;
+  margin-left: 175px;
+}
+.design__mirrorbox3__photodroite__texte h2 {
+  padding-bottom: 50px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+.design__testimonial {
+  width: 1440px;
+  height: 450px;
+  flex-shrink: 0;
+}
+.design__testimonial__titre {
+  text-align: center;
+  padding-top: 100px;
+}
+.design__testimonial__colonne {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  padding-top: 160px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+.design__testimonial__colonne__un {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.design__testimonial__colonne__un .photo-emily {
+  border-radius: 50% 50% 50% 50%;
+  width: 20%;
+}
+.design__testimonial__colonne__deux {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.design__testimonial__colonne__deux .photo-thomas {
+  border-radius: 50% 50% 50% 50%;
+  width: 20%;
+}
+.design__testimonial__colonne__trois {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.design__testimonial__colonne__trois .photo-jennie {
+  border-radius: 50% 50% 50% 50%;
+  width: 20%;
 }/*# sourceMappingURL=style.css.map */
